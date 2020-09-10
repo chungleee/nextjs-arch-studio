@@ -1,6 +1,6 @@
 # Frontend Mentor - Arch Studio multi-page website
 
-![Design preview for the Arch Studio multi-page website coding challenge](./preview.jpg)
+![Design preview for the Arch Studio multi-page website coding challenge](./public/assets/preview.jpg)
 
 ## Welcome! 👋
 
