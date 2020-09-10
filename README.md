@@ -2,15 +2,7 @@
 
 ![Design preview for the Arch Studio multi-page website coding challenge](./public/assets/preview.jpg)
 
-## Welcome! 👋
-
-Thanks for purchasing this premium Frontend Mentor coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. These premium challenges are perfect portfolio pieces, so please do feel free to use what you build in your portfolio to show others.
-
-**To do this challenge, you need a solid understanding of HTML and CSS and a basic understanding of JavaScript.**
-
-## The challenge
+## The challenge 💪
 
 Your challenge is to build out this multi-page website and get it looking as close to the design as possible.
 
