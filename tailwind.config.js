@@ -9,6 +9,11 @@ module.exports = {
       sans: ["Spartan", "sans-serif"],
     },
     extend: {
+      backgroundImage: (theme) => {
+        return {
+          "img-paramour": "url('/assets/home/mobile/image-hero-paramour.jpg')",
+        };
+      },
       colors: {
         "very-dark-blue": "#1B1D23",
         "dark-grey": "#60636D",
