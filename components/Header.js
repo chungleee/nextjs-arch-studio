@@ -1,6 +1,5 @@
 import React from "react";
 import Hamburger from "./icons/Hamburger";
-import Logo from "./icons/Logo";
 
 const Header = () => {
   return (
