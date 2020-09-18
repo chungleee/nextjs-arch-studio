@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import Card from "../components/Card";
 
 const Home = () => {
+  const features = [
+    {
+      name: "Project Del Sol",
+      image: "img-del-sol",
+    },
+    {
+      name: "228B Tower",
+      image: "img-228b",
+    },
+    {
+      name: "Le Prototype",
+      image: "img-prototype",
+    },
+  ];
+
   return (
     <div>
       <Header />
+
       <section className="bg-img-paramour  bg-no-repeat flex items-center h-screen px-8 text-white">
         <div>
-          <h1 className="capitalize font-bold leading-none mb-4 text-4xl">
-            project paramour
+          <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight">
+            Project Paramour
           </h1>
           <p className="leading-6 mb-12 text-left text-sm">
             Project made for an art museum near Southwest London. Project
@@ -18,10 +35,11 @@ const Home = () => {
           <Button className="font-bold text-sm">See Our Portfolio</Button>
         </div>
       </section>
+
       <section className="px-8">
         <div className="py-12">
           <hr className="border-light-grey w-16 mb-12" />
-          <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl">
+          <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight">
             Welcome to <br /> Arch Studio
           </h1>
           <div className="leading-6 text-sm text-dark-grey">
@@ -43,6 +61,30 @@ const Home = () => {
               the test of time.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-img-small-team  bg-no-repeat flex items-center h-screen px-8 text-white">
+        <div>
+          <h1 className="font-bold leading-none mb-8 text-4xl tracking-tight">
+            Small team, <br /> big ideas
+          </h1>
+          <Button className="font-bold text-sm">About Us</Button>
+        </div>
+      </section>
+
+      <section className="px-8 py-12">
+        <div>
+          <h1 className="font-bold mb-8 text-4xl tracking-tight">Featured</h1>
+          {features.map((feature) => {
+            return (
+              <Card
+                bgImg={feature.image}
+                name={feature.name}
+                className="my-4"
+              />
+            );
+          })}
         </div>
       </section>
     </div>
