@@ -12,6 +12,11 @@ module.exports = {
       backgroundImage: (theme) => {
         return {
           "img-paramour": "url('/assets/home/mobile/image-hero-paramour.jpg')",
+          "img-small-team": "url('/assets/home/mobile/image-small-team.jpg')",
+          "img-del-sol": "url('/assets/portfolio/mobile/image-del-sol.jpg')",
+          "img-228b": "url('/assets/portfolio/mobile/image-228b.jpg')",
+          "img-prototype":
+            "url('/assets/portfolio/mobile/image-prototype.jpg')",
         };
       },
       colors: {
