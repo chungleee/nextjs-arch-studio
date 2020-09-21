@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
+import { nanoid } from "nanoid";
 
 const Home = () => {
   const features = [
@@ -24,7 +25,7 @@ const Home = () => {
     <div>
       <Header />
 
-      <section className="bg-img-paramour  bg-no-repeat flex items-center h-screen px-8 text-white">
+      <section className="bg-img-paramour  bg-no-repeat flex items-center h-screen px-8 text-white md:px-0">
         <div>
           <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight">
             Project Paramour
@@ -37,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-8">
+      <section className="px-8 md:px-0">
         <div className="py-12">
           <hr className="border-light-grey w-16 mb-12" />
           <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight">
@@ -65,7 +66,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-img-small-team  bg-no-repeat flex items-center h-screen px-8 text-white">
+      <section className="bg-img-small-team  bg-no-repeat flex items-center h-screen px-8 text-white md:px-0">
         <div>
           <h1 className="font-bold leading-none mb-8 text-4xl tracking-tight">
             Small team, <br /> big ideas
@@ -74,12 +75,14 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-8 py-12">
+      <section className="px-8 py-12 md:px-0">
         <div>
           <h1 className="font-bold mb-8 text-4xl tracking-tight">Featured</h1>
           {features.map((feature) => {
+            let key = nanoid();
             return (
               <Card
+                key={key}
                 bgImg={feature.image}
                 name={feature.name}
                 className="my-4"
