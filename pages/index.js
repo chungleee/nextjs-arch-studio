@@ -10,14 +10,17 @@ const Home = () => {
     {
       name: "Project Del Sol",
       image: "img-del-sol",
+      tablet: "img-del-sol-tablet",
     },
     {
       name: "228B Tower",
       image: "img-228b",
+      tablet: "img-228b-tablet",
     },
     {
       name: "Le Prototype",
       image: "img-prototype",
+      tablet: "img-prototype-tablet",
     },
   ];
 
@@ -25,7 +28,7 @@ const Home = () => {
     <div>
       <Header />
 
-      <section className="bg-img-paramour  bg-no-repeat flex items-center h-screen px-8 text-white md:px-0">
+      <section className="bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet">
         <div>
           <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight">
             Project Paramour
@@ -66,7 +69,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-img-small-team  bg-no-repeat flex items-center h-screen px-8 text-white md:px-0">
+      <section className="bg-img-small-team  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-small-team-tablet">
         <div>
           <h1 className="font-bold leading-none mb-8 text-4xl tracking-tight">
             Small team, <br /> big ideas
@@ -83,9 +86,9 @@ const Home = () => {
             return (
               <Card
                 key={key}
-                bgImg={feature.image}
                 name={feature.name}
                 className="my-4"
+                className={`my-4 bg-no-repeat bg-cover bg-${feature.image} md:bg-${feature.tablet}`}
               />
             );
           })}
