@@ -17,6 +17,15 @@ module.exports = {
           "img-228b": "url('/assets/portfolio/mobile/image-228b.jpg')",
           "img-prototype":
             "url('/assets/portfolio/mobile/image-prototype.jpg')",
+          "img-paramour-tablet":
+            "url('/assets/home/tablet/image-hero-paramour.jpg')",
+          "img-small-team-tablet":
+            "url('/assets/home/tablet/image-small-team.jpg')",
+          "img-del-sol-tablet":
+            "url('/assets/portfolio/tablet/image-del-sol.jpg')",
+          "img-228b-tablet": "url('/assets/portfolio/tablet/image-228b.jpg')",
+          "img-prototype-tablet":
+            "url('/assets/portfolio/tablet/image-prototype.jpg')",
         };
       },
       colors: {
