@@ -28,10 +28,10 @@ const Home = () => {
     <div>
       <Header />
 
-      <section className="bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet">
-        <div>
-          <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight">
-            Project Paramour
+      <section className="bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center">
+        <div className="md:w-3/5">
+          <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight md:text-6xl">
+            Project <br /> Paramour
           </h1>
           <p className="leading-6 mb-12 text-left text-sm">
             Project made for an art museum near Southwest London. Project
@@ -43,8 +43,17 @@ const Home = () => {
 
       <section className="px-8 md:px-0">
         <div className="py-12">
-          <hr className="border-light-grey w-16 mb-12" />
-          <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight">
+          <hr className="border-light-grey w-16 mb-12 md:hidden" />
+          <h1
+            className="hidden text-very-light-grey md:block md:font-bold"
+            style={{
+              fontSize: "120px",
+              letterSpacing: "-3px",
+            }}
+          >
+            Welcome
+          </h1>
+          <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight md:text-5xl">
             Welcome to <br /> Arch Studio
           </h1>
           <div className="leading-6 text-sm text-dark-grey">
@@ -69,9 +78,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-img-small-team  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-small-team-tablet">
-        <div>
-          <h1 className="font-bold leading-none mb-8 text-4xl tracking-tight">
+      <section className="bg-img-small-team  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-small-team-tablet md:justify-center">
+        <div className="md:w-3/5">
+          <h1 className="font-bold leading-none mb-8 text-4xl tracking-tight md:text-5xl">
             Small team, <br /> big ideas
           </h1>
           <Button className="font-bold text-sm">About Us</Button>
@@ -80,11 +89,19 @@ const Home = () => {
 
       <section className="px-8 py-12 md:px-0">
         <div>
-          <h1 className="font-bold mb-8 text-4xl tracking-tight">Featured</h1>
-          {features.map((feature) => {
+          <div className="mb-8 flex justify-between items-center">
+            <h1 className="font-bold  text-4xl tracking-tight md:text-5xl">
+              Featured
+            </h1>
+            <span className="hidden md:inline">
+              <Button>See All</Button>
+            </span>
+          </div>
+          {features.map((feature, idx) => {
             let key = nanoid();
             return (
               <Card
+                count={idx + 1}
                 key={key}
                 name={feature.name}
                 className="my-4"
