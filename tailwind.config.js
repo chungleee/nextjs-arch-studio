@@ -9,6 +9,11 @@ module.exports = {
       sans: ["Spartan", "sans-serif"],
     },
     extend: {
+      height: {
+        "445px": "445px",
+        "120px": "120px",
+        "150px": "150px",
+      },
       backgroundImage: (theme) => {
         return {
           "img-paramour": "url('/assets/home/mobile/image-hero-paramour.jpg')",
