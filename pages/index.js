@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
+      {/*<Header />*/}
 
       <section className="bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center">
         <div className="md:w-3/5">
@@ -109,10 +109,11 @@ const Home = () => {
               />
             );
           })}
+          <Button className="w-full md:hidden">See All</Button>
         </div>
       </section>
 
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
