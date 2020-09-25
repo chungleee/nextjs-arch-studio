@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
-import Header from "../components/Header";
 import Card from "../components/Card";
-import Footer from "../components/Footer";
 import { nanoid } from "nanoid";
+import Pagination from "../components/Pagination";
 
 const Home = () => {
   const features = [
@@ -24,20 +23,39 @@ const Home = () => {
     },
   ];
 
+  const heroes = [
+    "img-paramour-desktop",
+    "img-federal-desktop",
+    "img-seraph-desktop",
+    "img-trinity-desktop",
+  ];
+
+  const [hero, setHero] = useState(0);
+
+  const handleSelectHero = (index) => {
+    setHero(index);
+  };
+
   return (
     <div>
-      {/*<Header />*/}
-
-      <section className="bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center">
+      <section
+        className={`bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center lg:relative lg:bg-${heroes[hero]}`}
+      >
         <div className="md:w-3/5">
           <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight md:text-6xl">
             Project <br /> Paramour
           </h1>
-          <p className="leading-6 mb-12 text-left text-sm">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
+          <p className="leading-6 mb-12 text-left text-sm lg:w-445px">
+            Project made for an art museum near Southwest <br /> London. Project
+            Paramour is a statement of bold, <br /> modern architecture.
           </p>
           <Button className="font-bold text-sm">See Our Portfolio</Button>
+        </div>
+        <div
+          className="lg:absolute lg:flex lg:bottom-0"
+          style={{ left: "-80px" }}
+        >
+          <Pagination handleSelectHero={handleSelectHero} heroes={heroes} />
         </div>
       </section>
 
@@ -112,8 +130,6 @@ const Home = () => {
           <Button className="w-full md:hidden">See All</Button>
         </div>
       </section>
-
-      {/*<Footer />*/}
     </div>
   );
 };
