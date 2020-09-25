@@ -12,7 +12,7 @@ const Header = () => {
           alt="Arch Logo"
         />
       </Link>
-      <ul className="hidden font-bold text-medium-grey md:flex md:mx-auto">
+      <ul className="hidden font-bold text-medium-grey md:flex md:mx-auto lg:ml-24">
         <li>
           <Link href="/portfolio">Portfolio</Link>
         </li>

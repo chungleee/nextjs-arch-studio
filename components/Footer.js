@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-very-light-grey h-445px md:flex md:h-32 md:bg-white">
       <div className="bg-white md:hidden" style={{ height: "60px" }}></div>
-      <div className="hidden md:flex md:w-4/5 md:bg-very-light-grey">
+      <div className="md:flex md:w-4/5 md:bg-very-light-grey">
         <div
           className="absolute bg-very-dark-blue flex justify-center items-center h-120px inset-0 mx-auto md:static md:ml-0 md:mr-16 md:h-auto"
           style={{
