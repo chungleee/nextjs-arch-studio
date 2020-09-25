@@ -14,14 +14,21 @@ module.exports = {
         "120px": "120px",
         "150px": "150px",
       },
+      width: {
+        "120px": "120px",
+        "150px": "150px",
+        "445px": "445px",
+      },
       backgroundImage: (theme) => {
         return {
+          // MOBILE
           "img-paramour": "url('/assets/home/mobile/image-hero-paramour.jpg')",
           "img-small-team": "url('/assets/home/mobile/image-small-team.jpg')",
           "img-del-sol": "url('/assets/portfolio/mobile/image-del-sol.jpg')",
           "img-228b": "url('/assets/portfolio/mobile/image-228b.jpg')",
           "img-prototype":
             "url('/assets/portfolio/mobile/image-prototype.jpg')",
+          // TABLET
           "img-paramour-tablet":
             "url('/assets/home/tablet/image-hero-paramour.jpg')",
           "img-small-team-tablet":
@@ -31,6 +38,22 @@ module.exports = {
           "img-228b-tablet": "url('/assets/portfolio/tablet/image-228b.jpg')",
           "img-prototype-tablet":
             "url('/assets/portfolio/tablet/image-prototype.jpg')",
+          // DESKTOP
+          "img-paramour-desktop":
+            "url('/assets/home/desktop/image-hero-paramour.jpg')",
+          "img-federal-desktop":
+            "url('/assets/home/desktop/image-hero-federal.jpg')",
+          "img-seraph-desktop":
+            "url('/assets/home/desktop/image-hero-seraph.jpg')",
+          "img-trinity-desktop":
+            "url('/assets/home/desktop/image-hero-trinity.jpg')",
+          "img-small-team-desktop":
+            "url('/assets/home/desktop/image-small-team.jpg')",
+          "img-del-sol-desktop":
+            "url('/assets/portfolio/desktop/image-del-sol.jpg')",
+          "img-228b-desktop": "url('/assets/portfolio/desktop/image-228b.jpg')",
+          "img-prototype-desktop":
+            "url('/assets/portfolio/desktop/image-prototype.jpg')",
         };
       },
       colors: {
