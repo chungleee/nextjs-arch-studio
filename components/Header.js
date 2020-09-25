@@ -5,7 +5,13 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="border-none flex justify-between items-center px-8 py-8 md:px-0">
-      <img className="h-8" src="/assets/logo.svg" alt="Arch Logo" />
+      <Link href="/">
+        <img
+          className="h-8 cursor-pointer"
+          src="/assets/logo.svg"
+          alt="Arch Logo"
+        />
+      </Link>
       <ul className="hidden font-bold text-medium-grey md:flex md:mx-auto">
         <li>
           <Link href="/portfolio">Portfolio</Link>
