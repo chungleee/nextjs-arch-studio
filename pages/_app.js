@@ -6,7 +6,7 @@ import "../styles/index.css";
 const App = ({ Component, pageProps }) => {
   return (
     <div>
-      <div className="md:px-20 md:m-auto">
+      <div className="md:px-20 lg:px-32">
         <Header />
         <Component {...pageProps} />
       </div>
