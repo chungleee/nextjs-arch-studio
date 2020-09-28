@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ className, bgImg, name, count }) => {
   return (
     <div
-      className={`bg-${bgImg} relative ${className ? className : ""}`}
+      className={`relative ${className ? className : ""}`}
       style={{ minHeight: "240px" }}
     >
       <div
