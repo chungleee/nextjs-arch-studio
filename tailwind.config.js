@@ -11,13 +11,19 @@ module.exports = {
     extend: {
       height: {
         "445px": "445px",
+        "560px": "560px",
         "120px": "120px",
         "150px": "150px",
       },
       width: {
         "120px": "120px",
         "150px": "150px",
+        "350px": "350px",
         "445px": "445px",
+      },
+      fontSize: {
+        medium: "7.5rem",
+        huge: "12.5rem",
       },
       backgroundImage: (theme) => {
         return {
@@ -66,6 +72,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ["responsive", "hover", "active"],
+  },
   plugins: [],
 };
