@@ -10,16 +10,19 @@ const Home = () => {
       name: "Project Del Sol",
       image: "img-del-sol",
       tablet: "img-del-sol-tablet",
+      desktop: "img-del-sol-desktop",
     },
     {
       name: "228B Tower",
       image: "img-228b",
       tablet: "img-228b-tablet",
+      desktop: "img-228b-desktop",
     },
     {
       name: "Le Prototype",
       image: "img-prototype",
       tablet: "img-prototype-tablet",
+      desktop: "img-prototype-desktop",
     },
   ];
 
@@ -39,7 +42,7 @@ const Home = () => {
   return (
     <div>
       <section
-        className={`bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center lg:relative lg:bg-${heroes[hero]}`}
+        className={`bg-img-paramour  bg-cover bg-no-repeat flex items-center h-screen px-8 text-white md:px-0 md:bg-img-paramour-tablet md:justify-center lg:mb-20 lg:relative lg:bg-${heroes[hero]}`}
       >
         <div className="md:w-3/5">
           <h1 className="font-bold leading-none mb-4 text-4xl tracking-tight md:text-6xl">
@@ -59,39 +62,46 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-8 md:px-0">
-        <div className="py-12">
+      <section className="px-8 md:px-0 lg:mt-20">
+        <div className="py-12 lg:relative">
           <hr className="border-light-grey w-16 mb-12 md:hidden" />
           <h1
-            className="hidden text-very-light-grey md:block md:font-bold"
+            className="hidden text-very-light-grey md:block md:font-bold md:text-medium lg:text-huge lg:absolute"
             style={{
-              fontSize: "120px",
               letterSpacing: "-3px",
+              top: "-100px",
             }}
           >
             Welcome
           </h1>
-          <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight md:text-5xl">
-            Welcome to <br /> Arch Studio
-          </h1>
-          <div className="leading-6 text-sm text-dark-grey">
-            <p className="mb-6">
-              We have a unique network and skillset to help bring your projects
-              to life. Our small team of highly skilled individuals combined
-              with our large network put us in a strong position to deliver
-              exceptional results.
-            </p>
-            <p className="mb-6">
-              Over the past 10 years, we have worked on all kinds of projects.
-              From stations to high-rise buildings, we create spaces that
-              inspire and delight.
-            </p>
-            <p className="mb-6">
-              We work closely with our clients so that we understand the
-              intricacies of each project. This allows us to work in harmony the
-              surrounding area to create truly stunning projects that will stand
-              the test of time.
-            </p>
+          <div className="lg:flex lg:justify-end">
+            <div className="leading-6 text-sm text-dark-grey lg:flex lg:flex-col lg:w-445px lg:mt-auto lg:mx-auto">
+              <h1 className="font-bold mb-10 leading-none text-very-dark-blue text-4xl tracking-tight md:text-5xl lg:text-6xl">
+                Welcome to <br /> Arch Studio
+              </h1>
+              <p className="mb-6">
+                We have a unique network and skillset to help bring your
+                projects to life. Our small team of highly skilled individuals
+                combined with our large network put us in a strong position to
+                deliver exceptional results.
+              </p>
+              <p className="mb-6">
+                Over the past 10 years, we have worked on all kinds of projects.
+                From stations to high-rise buildings, we create spaces that
+                inspire and delight.
+              </p>
+              <p className="mb-6 lg:mb-0">
+                We work closely with our clients so that we understand the
+                intricacies of each project. This allows us to work in harmony
+                the surrounding area to create truly stunning projects that will
+                stand the test of time.
+              </p>
+            </div>
+            <img
+              className="hidden lg:block"
+              src="/assets/home/desktop/image-welcome.jpg"
+              alt="welcome image"
+            />
           </div>
         </div>
       </section>
@@ -115,18 +125,19 @@ const Home = () => {
               <Button>See All</Button>
             </span>
           </div>
-          {features.map((feature, idx) => {
-            let key = nanoid();
-            return (
-              <Card
-                count={idx + 1}
-                key={key}
-                name={feature.name}
-                className="my-4"
-                className={`my-4 bg-no-repeat bg-cover bg-${feature.image} md:bg-${feature.tablet}`}
-              />
-            );
-          })}
+          <div className="lg:flex">
+            {features.map((feature, idx) => {
+              let key = nanoid();
+              return (
+                <Card
+                  count={idx + 1}
+                  key={key}
+                  name={feature.name}
+                  className={`my-4 bg-no-repeat bg-cover lg:w-350px lg:h-560px bg-${feature.image} md:bg-${feature.tablet} lg:bg-${feature.desktop}`}
+                />
+              );
+            })}
+          </div>
           <Button className="w-full md:hidden">See All</Button>
         </div>
       </section>
