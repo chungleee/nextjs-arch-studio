@@ -3,36 +3,9 @@ import Button from "../components/Button";
 import Card from "../components/Card";
 import { nanoid } from "nanoid";
 import Pagination from "../components/Pagination";
+import { features, heroes } from "../public/data";
 
 const Home = () => {
-  const features = [
-    {
-      name: "Project Del Sol",
-      image: "img-del-sol",
-      tablet: "img-del-sol-tablet",
-      desktop: "img-del-sol-desktop",
-    },
-    {
-      name: "228B Tower",
-      image: "img-228b",
-      tablet: "img-228b-tablet",
-      desktop: "img-228b-desktop",
-    },
-    {
-      name: "Le Prototype",
-      image: "img-prototype",
-      tablet: "img-prototype-tablet",
-      desktop: "img-prototype-desktop",
-    },
-  ];
-
-  const heroes = [
-    "img-paramour-desktop",
-    "img-federal-desktop",
-    "img-seraph-desktop",
-    "img-trinity-desktop",
-  ];
-
   const [hero, setHero] = useState(0);
 
   const handleSelectHero = (index) => {
