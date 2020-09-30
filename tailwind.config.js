@@ -60,6 +60,31 @@ module.exports = {
           "img-228b-desktop": "url('/assets/portfolio/desktop/image-228b.jpg')",
           "img-prototype-desktop":
             "url('/assets/portfolio/desktop/image-prototype.jpg')",
+          // PORTFOLIO
+          "image-228b-mobile":
+            'url("/assets/portfolio/mobile/image-228b-mobile.jpg")',
+          "image-del-sol-mobile":
+            'url("/assets/portfolio/mobile/image-del-sol-mobile.jpg")',
+          "image-edelweiss-mobile":
+            'url("/assets/portfolio/mobile/image-edelweiss-mobile.jpg")',
+          "image-eebox-mobile":
+            'url("/assets/portfolio/mobile/image-eebox-mobile.jpg")',
+          "image-federal-mobile":
+            'url("/assets/portfolio/mobile/image-federal-mobile.jpg")',
+          "image-hypers-mobile":
+            'url("/assets/portfolio/mobile/image-hypers-mobile.jpg")',
+          "image-netcry-mobile":
+            'url("/assets/portfolio/mobile/image-netcry-mobile.jpg")',
+          "image-paramour-mobile":
+            'url("/assets/portfolio/mobile/image-paramour-mobile.jpg")',
+          "image-prototype-mobile":
+            'url("/assets/portfolio/mobile/image-prototype-mobile.jpg")',
+          "image-seraph-mobile":
+            'url("/assets/portfolio/mobile/image-seraph-mobile.jpg")',
+          "image-sxiv-mobile":
+            'url("/assets/portfolio/mobile/image-sxiv-mobile.jpg")',
+          "image-trinity-mobile":
+            'url("/assets/portfolio/mobile/image-trinity-mobile.jpg")',
         };
       },
       colors: {
