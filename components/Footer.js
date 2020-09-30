@@ -3,9 +3,9 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-very-light-grey h-445px md:flex md:h-32 md:bg-white">
+    <footer className="relative bg-very-light-grey h-445px md:flex md:h-32 md:bg-white lg:mx-32">
       <div className="bg-white md:hidden" style={{ height: "60px" }}></div>
-      <div className="md:flex md:w-4/5 md:bg-very-light-grey">
+      <div className="md:flex md:w-4/5 md:bg-very-light-grey lg:w-11/12">
         <div
           className="absolute bg-very-dark-blue flex justify-center items-center h-120px inset-0 mx-auto md:static md:ml-0 md:mr-16 md:h-auto"
           style={{
