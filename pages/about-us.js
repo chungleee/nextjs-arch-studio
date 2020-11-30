@@ -22,7 +22,7 @@ const AboutUs = () => {
 	];
 	return (
 		<div>
-			<section className='lg:flex lg:relative'>
+			<section className='lg:flex lg:relative lg:mb-20'>
 				<img
 					src='/assets/about/mobile/image-hero.jpg'
 					srcSet='/assets/about/tablet/image-hero.jpg 768w,
@@ -56,30 +56,37 @@ const AboutUs = () => {
 
 			<hr className='ml-6 mb-20 w-16' color='#C8CCD8' />
 
-			<section className='px-6 pb-20'>
-				<h1 className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue capitalize'>
-					Our <br /> heritage
-				</h1>
-				<div className='leading-6 tracking-normal text-dark-grey'>
-					<p>
-						Founded in 2007, we started as a trio of architects. Our
-						complmentary skills and relentless attention to detail turned Arch
-						into one of the most sought after boutique firms in the country.
-					</p>
-					<p className='my-8'>
-						Specializing in Urban Design allowed us to focus on creating
-						exceptional structures that live in harmony with their surroundings.
-						We consider every detail from every surrounding element to inform
-						our designs.
-					</p>
-					<p>
-						Our small team of world-class professionals provides input on every
-						project.
-					</p>
+			<section className='px-6 pb-20 lg:flex lg:p-0 lg:justify-between lg:mb-20'>
+				<div className='lg:w-2/5 lg:mt-auto'>
+					<h1 className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue capitalize lg:mb-20'>
+						Our <br /> heritage
+					</h1>
+					<div className='leading-6 tracking-normal text-dark-grey'>
+						<p>
+							Founded in 2007, we started as a trio of architects. Our
+							complmentary skills and relentless attention to detail turned Arch
+							into one of the most sought after boutique firms in the country.
+						</p>
+						<p className='my-8'>
+							Specializing in Urban Design allowed us to focus on creating
+							exceptional structures that live in harmony with their
+							surroundings. We consider every detail from every surrounding
+							element to inform our designs.
+						</p>
+						<p>
+							Our small team of world-class professionals provides input on
+							every project.
+						</p>
+					</div>
 				</div>
+				<img
+					src='/assets/about/desktop/image-heritage.jpg'
+					alt='Heritage building'
+					className='hidden lg:block '
+				/>
 			</section>
 
-			<section className='px-6 md:mb-12'>
+			<section className='px-6 md:mb-12 lg:p-0'>
 				<h1 className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue capitalize'>
 					the <br /> leaders
 				</h1>
