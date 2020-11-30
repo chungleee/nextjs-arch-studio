@@ -1,6 +1,4 @@
 import React from 'react';
-import LinkedInIcon from '../components/icons/LinkedInIcon';
-import TwitterIcon from '../components/icons/TwitterIcon';
 import LeaderCard from '../components/LeaderCard';
 
 const AboutUs = () => {
@@ -24,24 +22,35 @@ const AboutUs = () => {
 	];
 	return (
 		<div>
-			<section>
+			<section className='lg:flex lg:relative'>
 				<img
 					src='/assets/about/mobile/image-hero.jpg'
+					srcSet='/assets/about/tablet/image-hero.jpg 768w,
+									/assets/about/desktop/image-hero.jpg 1280w'
 					alt='Picture of laptop with architectural blueprints'
+					className='w-full lg:w-1/2'
 				/>
-				<div className='bg-white py-20 px-6'>
+				<div className='bg-white py-20 px-6 lg:absolute lg:p-0 lg:w-2/3 lg:bottom-0 lg:right-0 lg:flex lg:flex-col lg:justify-end lg:h-445px'>
 					<h1
-						className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue'
-						style={{ letterSpacing: '-1px' }}
+						className='hidden lg:block lg:font-bold lg:capitalize lg:text-very-light-grey'
+						style={{ fontSize: '12.5rem' }}
 					>
-						Your team of professionals
+						about
 					</h1>
-					<p className='leading-6 tracking-normal text-dark-grey'>
-						Our team of world-class <br /> professionals will work with you
-						every step of the way. Strong relationships are at the core of
-						everything we do. This extends to the relationship our projects have
-						with their surroundings.
-					</p>
+					<div className='lg:w-3/4 lg:mx-auto'>
+						<h1
+							className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue lg:text-6xl lg:mb-16'
+							style={{ letterSpacing: '-1px' }}
+						>
+							Your team of professionals
+						</h1>
+						<p className='leading-6 tracking-normal text-dark-grey'>
+							Our team of world-class <br className='lg:hidden' /> professionals
+							will work with you every step of the way. Strong relationships are
+							at the core of everything we do. This extends to the relationship
+							our projects have with their surroundings.
+						</p>
+					</div>
 				</div>
 			</section>
 
@@ -70,13 +79,15 @@ const AboutUs = () => {
 				</div>
 			</section>
 
-			<section className='px-6'>
+			<section className='px-6 md:mb-12'>
 				<h1 className='font-bold mb-4 leading-3rem text-5xl text-very-dark-blue capitalize'>
 					the <br /> leaders
 				</h1>
-				{leaderData.map(({ src, name }) => {
-					return <LeaderCard src={src} name={name} />;
-				})}
+				<div className='grid gap-4 md:grid-cols-2'>
+					{leaderData.map(({ src, name }) => {
+						return <LeaderCard key={src} src={src} name={name} />;
+					})}
+				</div>
 			</section>
 		</div>
 	);
