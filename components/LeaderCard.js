@@ -3,7 +3,9 @@ import TwitterIcon from './icons/TwitterIcon';
 
 const LeaderCard = ({ src, name }) => {
 	return (
-		<div className='mb-8'>
+		<div
+		// className='mb-8'
+		>
 			<img src={`${src}`} alt={`Photo of ${name}`} className='w-full mb-4' />
 			<h1 className='font-bold text-lg leading-6'>Jake Richards</h1>
 			<h2 className='font-medium leading-6 my-2'>Chief Architect</h2>
