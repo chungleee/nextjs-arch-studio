@@ -4,9 +4,9 @@ export const data = [
 		month: 'september',
 		year: 2019,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-seraph.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-seraph.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-seraph.jpg',
+			mobile: '/assets/portfolio/mobile/image-seraph.jpg',
+			tablet: '/assets/portfolio/tablet/image-seraph.jpg',
+			desktop: '/assets/portfolio/desktop/image-seraph.jpg',
 		},
 	},
 	{
@@ -14,9 +14,9 @@ export const data = [
 		month: 'august',
 		year: 2017,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-eebox.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-eebox.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-eebox.jpg',
+			mobile: '/assets/portfolio/mobile/image-eebox.jpg',
+			tablet: '/assets/portfolio/tablet/image-eebox.jpg',
+			desktop: '/assets/portfolio/desktop/image-eebox.jpg',
 		},
 	},
 	{
@@ -24,9 +24,9 @@ export const data = [
 		month: 'march',
 		year: 2017,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-federal.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-federal.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-federal.jpg',
+			mobile: '/assets/portfolio/mobile/image-federal.jpg',
+			tablet: '/assets/portfolio/tablet/image-federal.jpg',
+			desktop: '/assets/portfolio/desktop/image-federal.jpg',
 		},
 	},
 	{
@@ -34,9 +34,9 @@ export const data = [
 		month: 'january',
 		year: 2016,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-del-sol.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-del-sol.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-del-sol.jpg',
+			mobile: '/assets/portfolio/mobile/image-del-sol.jpg',
+			tablet: '/assets/portfolio/tablet/image-del-sol.jpg',
+			desktop: '/assets/portfolio/desktop/image-del-sol.jpg',
 		},
 	},
 	{
@@ -44,9 +44,9 @@ export const data = [
 		month: 'october',
 		year: 2015,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-prototype.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-prototype.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-prototype.jpg',
+			mobile: '/assets/portfolio/mobile/image-prototype.jpg',
+			tablet: '/assets/portfolio/tablet/image-prototype.jpg',
+			desktop: '/assets/portfolio/desktop/image-prototype.jpg',
 		},
 	},
 	{
@@ -54,9 +54,9 @@ export const data = [
 		month: 'april',
 		year: 2015,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-228b.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-228b.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-228b.jpg',
+			mobile: '/assets/portfolio/mobile/image-228b.jpg',
+			tablet: '/assets/portfolio/tablet/image-228b.jpg',
+			desktop: '/assets/portfolio/desktop/image-228b.jpg',
 		},
 	},
 	{
@@ -64,9 +64,9 @@ export const data = [
 		month: 'december',
 		year: 2013,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-edelweiss.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-edelweiss.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-edelweiss.jpg',
+			mobile: '/assets/portfolio/mobile/image-edelweiss.jpg',
+			tablet: '/assets/portfolio/tablet/image-edelweiss.jpg',
+			desktop: '/assets/portfolio/desktop/image-edelweiss.jpg',
 		},
 	},
 	{
@@ -74,9 +74,9 @@ export const data = [
 		month: 'august',
 		year: 2012,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-netcry.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-netcry.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-netcry.jpg',
+			mobile: '/assets/portfolio/mobile/image-netcry.jpg',
+			tablet: '/assets/portfolio/tablet/image-netcry.jpg',
+			desktop: '/assets/portfolio/desktop/image-netcry.jpg',
 		},
 	},
 	{
@@ -84,9 +84,9 @@ export const data = [
 		month: 'january',
 		year: 2012,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-hypers.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-hypers.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-hypers.jpg',
+			mobile: '/assets/portfolio/mobile/image-hypers.jpg',
+			tablet: '/assets/portfolio/tablet/image-hypers.jpg',
+			desktop: '/assets/portfolio/desktop/image-hypers.jpg',
 		},
 	},
 	{
@@ -94,9 +94,9 @@ export const data = [
 		month: 'march',
 		year: 2011,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-sxiv.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-sxiv.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-sxiv.jpg',
+			mobile: '/assets/portfolio/mobile/image-sxiv.jpg',
+			tablet: '/assets/portfolio/tablet/image-sxiv.jpg',
+			desktop: '/assets/portfolio/desktop/image-sxiv.jpg',
 		},
 	},
 	{
@@ -104,9 +104,9 @@ export const data = [
 		month: 'september',
 		year: 2010,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-trinity.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-trinity.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-trinity.jpg',
+			mobile: '/assets/portfolio/mobile/image-trinity.jpg',
+			tablet: '/assets/portfolio/tablet/image-trinity.jpg',
+			desktop: '/assets/portfolio/desktop/image-trinity.jpg',
 		},
 	},
 	{
@@ -114,9 +114,9 @@ export const data = [
 		month: 'february',
 		year: 2008,
 		images: {
-			mobile: 'public/assets/portfolio/mobile/image-paramour.jpg',
-			tablet: 'public/assets/portfolio/tablet/image-paramour.jpg',
-			desktop: 'public/assets/portfolio/desktop/image-paramour.jpg',
+			mobile: '/assets/portfolio/mobile/image-paramour.jpg',
+			tablet: '/assets/portfolio/tablet/image-paramour.jpg',
+			desktop: '/assets/portfolio/desktop/image-paramour.jpg',
 		},
 	},
 ];
