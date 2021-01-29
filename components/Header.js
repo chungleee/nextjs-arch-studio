@@ -24,13 +24,13 @@ const Header = () => {
 					style={{ top: '5rem' }}
 				>
 					<li>
-						<Link href='#'>Portfolio</Link>
+						<Link href='/portfolio'>Portfolio</Link>
 					</li>
 					<li className='md:mx-16'>
 						<Link href='/about-us'>About Us</Link>
 					</li>
 					<li>
-						<Link href='#'>Contact</Link>
+						<Link href='/contact'>Contact</Link>
 					</li>
 				</ul>
 				<span
