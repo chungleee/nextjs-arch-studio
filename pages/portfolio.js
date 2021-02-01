@@ -5,10 +5,14 @@ import { data } from '../data/portfolio';
 const Portfolio = () => {
 	console.log('portoflio data: ', data);
 	return (
-		<main className='grid justify-center gap-8'>
-			{data.map((item) => {
-				return <PortfolioCard item={item} key={item.title} />;
-			})}
+		<main className='grid justify-center gap-8 my-12'>
+			{data
+				.sort((itemA, itemB) => {
+					return itemB.year - itemA.year;
+				})
+				.map((item) => {
+					return <PortfolioCard item={item} key={item.title} />;
+				})}
 		</main>
 	);
 };
