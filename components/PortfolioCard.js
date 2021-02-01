@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PortfolioCard = ({ item }) => {
-	console.log(item);
 	return (
 		<div className='relative'>
 			<picture>
@@ -15,7 +14,11 @@ const PortfolioCard = ({ item }) => {
 					srcSet={`${item.images.tablet}`}
 					alt={`${item.title}`}
 				/>
-				<img src={`${item.images.mobile}`} alt={`${item.title}`} />
+				<img
+					style={{ width: '100%' }}
+					src={`${item.images.mobile}`}
+					alt={`${item.title}`}
+				/>
 			</picture>
 			<div
 				className='absolute text-white text-lg font-bold capitalize'
