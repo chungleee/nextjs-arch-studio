@@ -3,7 +3,7 @@ import React from 'react';
 const PortfolioCard = ({ item }) => {
 	console.log(item);
 	return (
-		<div>
+		<div className='relative'>
 			<picture>
 				<source
 					media='(min-width: 1280px)'
@@ -17,6 +17,13 @@ const PortfolioCard = ({ item }) => {
 				/>
 				<img src={`${item.images.mobile}`} alt={`${item.title}`} />
 			</picture>
+			<div
+				className='absolute text-white text-lg font-bold capitalize'
+				style={{ bottom: '25px', left: '25px' }}
+			>
+				<h1>{item.title}</h1>
+				<h2 className='font-normal text-base text-very-light-grey'>{`${item.month} ${item.year}`}</h2>
+			</div>
 		</div>
 	);
 };
