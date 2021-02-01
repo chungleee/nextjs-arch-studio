@@ -5,7 +5,7 @@ import { data } from '../data/portfolio';
 const Portfolio = () => {
 	console.log('portoflio data: ', data);
 	return (
-		<main>
+		<main className='grid justify-center gap-8'>
 			{data.map((item) => {
 				return <PortfolioCard item={item} key={item.title} />;
 			})}
