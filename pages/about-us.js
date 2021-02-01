@@ -1,5 +1,6 @@
 import React from 'react';
 import LeaderCard from '../components/LeaderCard';
+import { leaderData } from '../data/about-us';
 
 const AboutUs = () => {
 	const leaderData = [
