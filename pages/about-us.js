@@ -3,24 +3,6 @@ import LeaderCard from '../components/LeaderCard';
 import { leaderData } from '../data/about-us';
 
 const AboutUs = () => {
-	const leaderData = [
-		{
-			name: 'Jake Richard',
-			src: '/assets/about/desktop/avatar-jake.jpg',
-		},
-		{
-			name: 'Thompson Smith',
-			src: '/assets/about/desktop/avatar-thompson.jpg',
-		},
-		{
-			name: 'Jackson Rourke',
-			src: '/assets/about/desktop/avatar-jackson.jpg',
-		},
-		{
-			name: 'Maria Simpson',
-			src: '/assets/about/desktop/avatar-maria.jpg',
-		},
-	];
 	return (
 		<div>
 			<section className='lg:flex lg:relative lg:mb-20'>
