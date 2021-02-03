@@ -1,21 +1,8 @@
 import React from 'react';
 import ContactDetailCard from '../components/ContactDetailCard';
+import { contactDetails } from '../data/contact';
 
 const Contact = () => {
-	const contactDetails = [
-		{
-			name: 'main office',
-			mail: 'archone@mail.com',
-			address: '1892 Chenoweth Drive TN',
-			phone: '123-456-3451',
-		},
-		{
-			name: 'office II',
-			mail: 'archtwo@mail.com',
-			address: '3399 Wines Lane TX',
-			phone: '832-123-4321',
-		},
-	];
 	return (
 		<div>
 			<picture>
@@ -44,7 +31,7 @@ const Contact = () => {
 					{contactDetails.map((contactDetail) => {
 						return (
 							<ContactDetailCard
-								key={contactDetails.phone}
+								key={contactDetail.phone}
 								contactDetail={contactDetail}
 							/>
 						);
