@@ -1,6 +1,8 @@
 import React from 'react';
 import ContactDetailCard from '../components/ContactDetailCard';
 import H1 from '../components/H1';
+import ArrowButton from '../components/ArrowButton';
+import InputField from '../components/InputField';
 import { contactDetails } from '../data/contact';
 
 const Contact = () => {
@@ -39,10 +41,16 @@ const Contact = () => {
 					})}
 				</section>
 
-				<section>
+				<section className='pt-10 pb-20 px-6'>
 					<H1>
 						Connect <br /> with us
 					</H1>
+					<div className='mt-8'>
+						<InputField name='name' />
+						<InputField name='email' className='my-8' />
+						<InputField name='message' />
+					</div>
+					<ArrowButton className='ml-auto' />
 				</section>
 			</main>
 		</div>
