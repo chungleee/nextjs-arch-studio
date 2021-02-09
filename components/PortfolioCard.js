@@ -15,7 +15,7 @@ const PortfolioCard = ({ item }) => {
 					alt={`${item.title}`}
 				/>
 				<img
-					style={{ width: '100%' }}
+					className='w-full'
 					src={`${item.images.mobile}`}
 					alt={`${item.title}`}
 				/>

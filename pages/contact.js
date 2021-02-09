@@ -9,7 +9,18 @@ const Contact = () => {
 	return (
 		<div>
 			<picture>
+				<source
+					media='(min-width: 1280px)'
+					srcSet='/assets/contact/desktop/image-hero.jpg'
+					alt='Telephone hero picture'
+				/>
+				<source
+					media='(min-width: 768px)'
+					srcSet='/assets/contact/tablet/image-hero.jpg'
+					alt='Telephone hero picture'
+				/>
 				<img
+					className='w-full'
 					src='/assets/contact/mobile/image-hero.jpg'
 					alt='Telephone hero picture'
 				/>
@@ -19,17 +30,20 @@ const Contact = () => {
 					<H1>
 						Tell us about <br /> your project
 					</H1>
-					<p className='leading-6 mb-12 text-left text-sm lg:w-445px'>
-						We’d love to hear more about your <br /> project. Please, leave a
-						message <br />
-						below or give us a call. We have two <br /> offices, one in Texas
-						and one in <br />
-						Tennessee. If you find yourself nearby, <br /> come say hello!
+					<p className='leading-6 mb-12 text-dark-grey text-left text-sm lg:w-445px'>
+						We’d love to hear more about your <br className='md:hidden' />
+						project. Please, <br className='hidden md:block' /> leave a message{' '}
+						<br className='md:hidden' />
+						below or give us a call. We have two <br />
+						offices, one in Texas and one in <br className='md:hidden' />
+						Tennessee. If you find <br className='hidden md:block' /> yourself
+						nearby, <br className='md:hidden' />
+						come say hello!
 					</p>
 				</section>
 				<section className='pt-10 pb-20 px-6'>
 					<H1>
-						Contact <br /> Details
+						Contact <br className='md:hidden' /> Details
 					</H1>
 					{contactDetails.map((contactDetail) => {
 						return (
@@ -43,7 +57,7 @@ const Contact = () => {
 
 				<section className='pt-10 pb-20 px-6'>
 					<H1>
-						Connect <br /> with us
+						Connect <br className='md:hidden' /> with us
 					</H1>
 					<div className='mt-8'>
 						<InputField name='name' />
