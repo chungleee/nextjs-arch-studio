@@ -3,7 +3,6 @@ import PortfolioCard from '../components/PortfolioCard';
 import { data } from '../data/portfolio';
 
 const Portfolio = () => {
-	console.log('portoflio data: ', data);
 	return (
 		<main className='grid justify-center gap-8 my-12 lg:grid-cols-3'>
 			{data

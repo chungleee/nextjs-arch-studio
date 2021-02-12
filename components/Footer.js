@@ -35,7 +35,7 @@ const Footer = () => {
 			</div>
 
 			<Button className='mx-auto md:absolute md:h-16 md:right-0 md:top-0 md:bottom-0 md:my-auto'>
-				See Our Portfolio
+				<Link href='/portfolio'>See Our Portfolio</Link>
 			</Button>
 		</footer>
 	);
