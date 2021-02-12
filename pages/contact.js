@@ -8,25 +8,29 @@ import { contactDetails } from '../data/contact';
 const Contact = () => {
 	return (
 		<div>
-			<picture>
-				<source
-					media='(min-width: 1280px)'
-					srcSet='/assets/contact/desktop/image-hero.jpg'
-					alt='Telephone hero picture'
-				/>
-				<source
-					media='(min-width: 768px)'
-					srcSet='/assets/contact/tablet/image-hero.jpg'
-					alt='Telephone hero picture'
-				/>
-				<img
-					className='w-full'
-					src='/assets/contact/mobile/image-hero.jpg'
-					alt='Telephone hero picture'
-				/>
-			</picture>
-			<main>
-				<section className='pt-20 pb-10 px-6'>
+			<div className='relative'>
+				<picture>
+					<source
+						media='(min-width: 1280px)'
+						srcSet='/assets/contact/desktop/image-hero.jpg'
+						alt='Telephone hero picture'
+					/>
+					<source
+						media='(min-width: 768px)'
+						srcSet='/assets/contact/tablet/image-hero.jpg'
+						alt='Telephone hero picture'
+					/>
+					<img
+						className='w-full lg:w-1/2'
+						src='/assets/contact/mobile/image-hero.jpg'
+						alt='Telephone hero picture'
+					/>
+				</picture>
+
+				<section
+					className='pt-20 pb-10 px-6 lg:absolute lg:bg-white'
+					style={{ bottom: 0, right: '100px' }}
+				>
 					<H1>
 						Tell us about <br /> your project
 					</H1>
@@ -41,10 +45,15 @@ const Contact = () => {
 						come say hello!
 					</p>
 				</section>
-				<section className='pt-10 pb-20 px-6'>
+			</div>
+
+			<main>
+				<hr className='ml-6 mb-20 w-16' color='#C8CCD8' />
+				<section className='pt-10 pb-20 px-6 lg:flex lg:justify-between'>
 					<H1>
-						Contact <br className='md:hidden' /> Details
+						Contact <br className='md:hidden lg:block' /> Details
 					</H1>
+
 					{contactDetails.map((contactDetail) => {
 						return (
 							<ContactDetailCard
@@ -57,7 +66,7 @@ const Contact = () => {
 
 				<section className='pt-10 pb-20 px-6'>
 					<H1>
-						Connect <br className='md:hidden' /> with us
+						Connect <br className='md:hidden ' /> with us
 					</H1>
 					<div className='mt-8'>
 						<InputField name='name' />
